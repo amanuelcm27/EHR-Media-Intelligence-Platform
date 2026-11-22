@@ -1,0 +1,13 @@
+{
+  "name": "ehr-media-intelligence-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tailwind CSS clinician UI for the EHR Media Intelligence Platform",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./app.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./app.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

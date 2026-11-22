@@ -280,6 +280,9 @@ def create_app(
         search_service = SearchService(settings, store=store, embedder=embedder)
         try:
             search_service.ensure_ready()
+            # Warm the embedder and vector backend so the first clinician query
+            # does not pay the one-off model/allocator cost.
+            search_service.search("warmup", top_k=1)
         except Exception as exc:  # index can be built later; search returns 503
             logger.warning("Search index is not ready at startup: %s", exc)
         app.state.services = Services(
