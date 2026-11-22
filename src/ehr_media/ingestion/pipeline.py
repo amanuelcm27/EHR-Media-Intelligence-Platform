@@ -900,7 +900,7 @@ class IngestionPipeline:
                     {
                         "mrn": mrn,
                         "field": field_name,
-                        "values": [value for value, _ in conflict_values],
+                        "values": [str(value) for value, _ in conflict_values],
                         "sources": [source for _, source in conflict_values],
                         "chosen": str(selected.value),
                         "chosen_source": selected.source,
