@@ -1,0 +1,130 @@
+=== NOTE ===
+MRN: MRN-100234
+Patient: Vance, Eleanor
+DOB: 02/11/1948
+Date: 02/19/2026
+Type: Discharge Summary
+Author: Dr. Anita Patel
+Title: Discharge Summary - Acute Decompensated Heart Failure
+---
+Admission Date: 02/14/2026. Discharge Date: 02/19/2026. Chief Complaint: worsening shortness of breath and 6 lb weight gain over one week. History: 78-year-old woman with chronic heart failure with reduced ejection fraction (HFrEF, EF 30%), permanent atrial fibrillation on warfarin, hypertension, and stage 3 chronic kidney disease. She presented with dyspnea at rest, orthopnea, and bilateral lower-extremity edema. Examination: JVP elevated at 14 cm, bibasilar crackles, 2+ pitting edema. Labs: BNP 1450 pg/mL, creatinine 2.4 mg/dL (baseline 1.6), potassium 6.8 mmol/L, INR 6.2. Chest radiograph showed pulmonary vascular congestion and small bilateral pleural effusions. Echocardiogram: EF 30%, moderate mitral regurgitation. Hospital course: treated with IV furosemide with net negative 4.2 L, potassium lowered with sodium polystyrene sulfonate and insulin/dextrose, warfarin held for supratherapeutic INR. Diagnoses: acute decompensated heart failure, hyperkalemia, coagulopathy due to warfarin, CKD stage 3. Disposition: home with cardiology follow-up in 7 days. Discharge medications: furosemide 40 mg daily, carvedilol 6.25 mg BID, sacubitril/valsartan 24/26 mg BID, spironolactone held. Follow-up labs in 3 days.
+
+=== NOTE ===
+MRN: MRN-101002
+Patient: O'Connor, James
+DOB: 18/04/1975
+Date: 2026-02-03
+Type: Progress Note
+Author: Dr. Hannah Lee
+Title: ED Follow-up Note - Sepsis
+---
+Patient is a 50-year-old man admitted with sepsis secondary to right lower lobe pneumonia.
+Repeat lactate improved to 2.8 mmol/L after fluid resuscitation. Blood pressure 108/64 on
+norepinephrine 4 mcg/min. WBC 18.2. Antibiotics continued with ceftriaxone and azithromycin.
+Assessment: sepsis improving, pneumonia resolving. Plan: wean norepinephrine, repeat lactate in
+6 hours, transfer from ICU when stable.
+
+=== NOTE ===
+MRN: 102120
+Patient: Lindqvist, Grace
+Date: 13/45/2025
+Type: Scanned Note
+Author: Dr. Samuel Ortiz
+---
+SCANNED DOCUMENT - OCR QUALITY FAIR
+Emergency  department  visit  for  COPD  exacerbation.
+Patient  reports  increased  sputum  and  wheeze.  SpO2  88%  on  room  air.
+Chest  x-ray  shows  hyperinflation,  no  consolidation.  Treated  with  nebulizers
+and  prednisone.  Discharged  home  in  stable  condition.
+
+=== NOTE ===
+MRN: A-7781
+Patient: Haddad, Omar
+DOB: 10/21/1943
+Date: 2026-06-06
+Type: Progress Note
+Author: Dr. Ravi Shah
+Title: Stroke Unit Daily Note (legacy MRN)
+---
+Stroke unit day 1. Right arm strength 3/5, right leg 4/5, mild expressive aphasia improving.
+NIHSS 5. Blood pressure 146/82. No hemorrhagic transformation on repeat imaging. Started
+aspirin; anticoagulation planned after 24 hours. Physical and speech therapy initiated.
+Assessment: acute left MCA infarct, improving. Plan: continue stroke unit care.
+
+=== NOTE ===
+MRN: mrn 102566
+Patient: Petrova, Lena
+DOB: 05/16/2001
+Date: 2026-04-02
+Type: Progress Note
+Author: Dr. Hannah Lee
+Title: Surgical Consultation - Appendicitis
+---
+General surgery consultation. 24-year-old woman with ultrasound-confirmed acute appendicitis.
+WBC 15.2, no perforation or abscess on imaging. Plan: laparoscopic appendectomy after
+antibiotics, pre-operative checklist completed.
+
+=== NOTE ===
+MRN: UNKNOWN
+Patient: Nakamura, Aisha
+DOB: 03/27/1995
+Date: 2026-03-04
+Type: Progress Note
+Author: Dr. Lena Brooks
+Title: Telephone Follow-up - Thyroid
+---
+Telephone follow-up. Patient reports improved energy after increasing levothyroxine to 75 mcg
+daily. No palpitations. Repeat TSH scheduled in two weeks. Continue current dose.
+
+=== NOTE ===
+MRN: 102344
+Patient: Chen, Robert
+DOB: 08/05/1981
+Date: 2026-05-11
+Type: Progress Note
+Author: Dr. Samuel Ortiz
+Title: Urology Follow-up - Kidney Stone
+---
+Urology follow-up after emergency department visit. Stone has not passed. Pain controlled with
+ketorolac and tamsulosin. No fever. Plan: continue tamsulosin, strain urine, CT in two weeks if
+no passage, return precautions reviewed.
+
+=== NOTE ===
+MRN: 100788
+Patient: Raman, Priya
+DOB: 11/22/1990
+Date: 2026-01-12
+Type: Progress Note
+Author: Dr. Samuel Ortiz
+Title: Asthma Discharge Instructions
+---
+Asthma discharge instructions reviewed. Peak flow improved to 420 L/min after nebulizers.
+Continue prednisone 50 mg daily for five days and inhaled corticosteroid-formoterol. Avoid
+triggers. Return for worsening wheeze, chest pain, or difficulty speaking.
+
+=== NOTE ===
+MRN: 101899
+Patient: Okafor, Daniel
+DOB: 14/06/1969
+Date: 2026-03-29
+Type: Progress Note
+Author: Dr. Miriam Goldstein
+Title: Paracentesis Note
+---
+Therapeutic paracentesis performed, 4.1 L of clear ascitic fluid removed with albumin
+replacement. Post-procedure vitals stable. Specimen sent for cell count and culture.
+Assessment: tense ascites due to decompensated cirrhosis. Plan: continue diuretics, sodium
+restriction, transplant evaluation.
+
+=== NOTE ===
+MRN: MRN 100455
+Patient: Bell, Marcus
+DOB: 07/03/1962
+Date: 2026-03-05
+Type: Progress Note
+Author: Dr. Lena Brooks
+Title: Diabetes Education Note
+---
+Diabetes education completed. Reviewed carbohydrate counting, home glucose monitoring, and
+sick-day rules. Patient will start semaglutide weekly. Hold lisinopril until repeat potassium.
+Follow-up labs in two weeks.

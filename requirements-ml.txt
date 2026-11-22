@@ -1,0 +1,5 @@
+# Optional: real sentence-transformer embeddings + FAISS vector index.
+# The platform auto-detects these and falls back to a deterministic
+# hashing embedder + NumPy index so the demo runs without a model download.
+sentence-transformers>=3.0
+faiss-cpu>=1.8

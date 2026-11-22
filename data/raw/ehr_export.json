@@ -1,0 +1,2766 @@
+{
+  "exported_at": "2026-09-30T12:00:00Z",
+  "patients": [
+    {
+      "mrn": "MRN-100234",
+      "first_name": "Eleanor",
+      "last_name": "Vance",
+      "dob": "02/11/1948",
+      "gender": "F",
+      "phone": "+1 212-555-0142",
+      "email": "eleanor.vance@example.org",
+      "address": {
+        "line": "410 W 58th St",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10019"
+      },
+      "preferred_language": "English",
+      "encounters": [
+        {
+          "class": "IMP",
+          "reason": "Acute decompensated heart failure",
+          "start": "2026-02-14",
+          "end": "2026-02-19"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Discharge Summary",
+          "title": "Discharge Summary - Acute Decompensated Heart Failure",
+          "date": "2026-02-19",
+          "author": "Dr. Anita Patel",
+          "text": "Admission Date: 02/14/2026. Discharge Date: 02/19/2026. Chief Complaint: worsening shortness of breath and 6 lb weight gain over one week. History: 78-year-old woman with chronic heart failure with reduced ejection fraction (HFrEF, EF 30%), permanent atrial fibrillation on warfarin, hypertension, and stage 3 chronic kidney disease. She presented with dyspnea at rest, orthopnea, and bilateral lower-extremity edema. Examination: JVP elevated at 14 cm, bibasilar crackles, 2+ pitting edema. Labs: BNP 1450 pg/mL, creatinine 2.4 mg/dL (baseline 1.6), potassium 6.8 mmol/L, INR 6.2. Chest radiograph showed pulmonary vascular congestion and small bilateral pleural effusions. Echocardiogram: EF 30%, moderate mitral regurgitation. Hospital course: treated with IV furosemide with net negative 4.2 L, potassium lowered with sodium polystyrene sulfonate and insulin/dextrose, warfarin held for supratherapeutic INR. Diagnoses: acute decompensated heart failure, hyperkalemia, coagulopathy due to warfarin, CKD stage 3. Disposition: home with cardiology follow-up in 7 days. Discharge medications: furosemide 40 mg daily, carvedilol 6.25 mg BID, sacubitril/valsartan 24/26 mg BID, spironolactone held. Follow-up labs in 3 days."
+        },
+        {
+          "type": "Imaging Report",
+          "title": "Echocardiogram - Transthoracic",
+          "date": "2026-02-15",
+          "author": "Dr. M. Rosen",
+          "text": "Transthoracic echocardiogram. Left ventricle is moderately dilated with severe global hypokinesis. Ejection fraction estimated at 30%. Moderate mitral regurgitation. Left atrium moderately dilated. Right ventricular systolic pressure estimated at 48 mmHg. Small pericardial effusion. No intracardiac thrombus. Impression: HFrEF with EF 30%, moderate MR, pulmonary hypertension."
+        },
+        {
+          "type": "Progress Note",
+          "title": "Progress Note - Cardiology",
+          "date": "2026-02-17",
+          "author": "Dr. Anita Patel",
+          "text": "Subjective: dyspnea improved, now comfortable at rest. Objective: BP 104/62, HR 78 irregular, SpO2 96% on room air, weight down 2.8 kg. Exam: crackles at bases, JVP 9 cm, trace edema. Labs: potassium 5.4, creatinine 2.1, INR 2.8. Assessment: improving decompensated heart failure; hyperkalemia resolving; INR therapeutic after warfarin hold. Plan: continue IV diuresis, transition to oral furosemide, repeat BMP in the morning, resume warfarin at reduced dose."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "BNP",
+          "value": 1450,
+          "unit": "pg/mL",
+          "reference_range": "<100",
+          "date": "2026-02-14"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 2.4,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-02-14"
+        },
+        {
+          "test_name": "Potassium",
+          "value": 6.8,
+          "unit": "mmol/L",
+          "reference_range": "3.5-5.1",
+          "date": "2026-02-14"
+        },
+        {
+          "test_name": "INR",
+          "value": 6.2,
+          "unit": "ratio",
+          "reference_range": "0.8-1.2",
+          "date": "2026-02-14"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 134,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-02-14"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 2.1,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-02-17"
+        },
+        {
+          "test_name": "Potassium",
+          "value": 5.4,
+          "unit": "mmol/L",
+          "reference_range": "3.5-5.1",
+          "date": "2026-02-17"
+        },
+        {
+          "test_name": "INR",
+          "value": 2.8,
+          "unit": "ratio",
+          "reference_range": "0.8-1.2",
+          "date": "2026-02-17"
+        }
+      ]
+    },
+    {
+      "mrn": "100455",
+      "first_name": "Marcus",
+      "last_name": "Bell",
+      "dob": "1962-07-03",
+      "gender": "M",
+      "phone": "646-555-0198",
+      "address": {
+        "line": "88 Hanson Pl",
+        "city": "Brooklyn",
+        "state": "NY",
+        "postal_code": "11217"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Diabetes and CKD follow-up",
+          "start": "2026-03-05"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Diabetes and CKD Follow-up",
+          "date": "2026-03-05",
+          "author": "Dr. Lena Brooks",
+          "text": "Chief Complaint: diabetes follow-up. 63-year-old man with type 2 diabetes mellitus for 14 years, stage 3b chronic kidney disease, hypertension, and obesity. Reports polyuria and fatigue; denies chest pain. Medications: metformin 1000 mg BID, empagliflozin 10 mg daily, lisinopril 20 mg daily, atorvastatin 40 mg. Exam: BP 148/86, BMI 34, 1+ bilateral edema. Labs: HbA1c 9.4%, glucose 312 mg/dL, creatinine 2.1 mg/dL, eGFR 32 mL/min/1.73m2, potassium 5.4 mmol/L, urine albumin-creatinine ratio 480 mg/g. Assessment: uncontrolled type 2 diabetes, CKD stage 3b with albuminuria, hyperkalemia, hypertension not at goal. Plan: add semaglutide, reduce metformin to 500 mg BID, stop lisinopril temporarily, low-potassium diet, repeat BMP in 2 weeks, diabetes education referral."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "HbA1c",
+          "value": 9.4,
+          "unit": "%",
+          "reference_range": "4.0-5.6",
+          "date": "2026-03-05"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 312,
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "date": "2026-03-05"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 2.1,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-03-05"
+        },
+        {
+          "test_name": "eGFR",
+          "value": 32,
+          "unit": "mL/min/1.73m2",
+          "reference_range": ">60",
+          "date": "2026-03-05"
+        },
+        {
+          "test_name": "Potassium",
+          "value": 5.4,
+          "unit": "mmol/L",
+          "reference_range": "3.5-5.1",
+          "date": "2026-03-05"
+        },
+        {
+          "test_name": "Urine albumin-creatinine ratio",
+          "value": 480,
+          "unit": "mg/g",
+          "reference_range": "<30",
+          "date": "2026-03-05"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 137,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-03-05"
+        }
+      ]
+    },
+    {
+      "mrn": " 100788 ",
+      "first_name": "Priya",
+      "last_name": "Raman",
+      "gender": "F ",
+      "phone": "917-555-0110",
+      "address": {
+        "line": "250 E 63rd St",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10065"
+      },
+      "encounters": [
+        {
+          "class": "EMER",
+          "reason": "Asthma exacerbation",
+          "start": "2026-01-12"
+        }
+      ],
+      "documents": [],
+      "labs": []
+    },
+    {
+      "mrn": "100788",
+      "first_name": "Priya",
+      "last_name": "Raman",
+      "dob": "11/22/1990",
+      "gender": "Female",
+      "encounters": [
+        {
+          "class": "EMER",
+          "reason": "Asthma exacerbation",
+          "start": "2026-01-12"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Emergency Department Note - Asthma Exacerbation",
+          "date": "2026-01-12",
+          "author": "Dr. Samuel Ortiz",
+          "text": "Emergency Department Note. Chief Complaint: wheezing and shortness of breath for two days after a viral upper respiratory infection. 35-year-old woman with moderate persistent asthma. She used albuterol every two hours overnight without relief. Exam: RR 26, SpO2 93% on room air, diffuse expiratory wheezes, speaking in short sentences. Peak flow 280 L/min (baseline 480). Chest radiograph: hyperinflation without focal consolidation or pneumothorax. Treatment: albuterol-ipratropium nebulizers x3, oral prednisone 60 mg, magnesium sulfate 2 g IV. Reassessed after treatment: SpO2 97%, peak flow 420 L/min, wheezing decreased. Assessment: moderate asthma exacerbation triggered by viral URI. Plan: prednisone 50 mg daily x5 days, continue inhaled corticosteroid-formoterol, asthma action plan reviewed, return precautions."
+        },
+        {
+          "type": "Imaging Report",
+          "title": "Chest Radiograph - PA and Lateral",
+          "date": "2026-01-12",
+          "author": "Dr. M. Rosen",
+          "text": "Chest radiograph PA and lateral. Lungs are hyperinflated with flattened diaphragms. No focal consolidation, pleural effusion, or pneumothorax. Cardiomediastinal silhouette normal. Impression: hyperinflation consistent with obstructive airway disease; no acute infiltrate."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "WBC",
+          "value": 9.8,
+          "unit": "10^3/uL",
+          "reference_range": "4.0-11.0",
+          "date": "2026-01-12"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.2,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-01-12"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 138,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-01-12"
+        },
+        {
+          "test_name": "Potassium",
+          "value": 3.9,
+          "unit": "mmol/L",
+          "reference_range": "3.5-5.1",
+          "date": "2026-01-12"
+        }
+      ]
+    },
+    {
+      "mrn": "MRN 101002",
+      "first_name": "James",
+      "last_name": "O'Connor",
+      "dob": "04/18/1975",
+      "gender": "1",
+      "phone": "(646) 555-0121",
+      "address": {
+        "line": "701 Fort Washington Ave",
+        "city": "New York",
+        "state": "New York",
+        "postal_code": "10040"
+      },
+      "encounters": [
+        {
+          "class": "Inpatient",
+          "reason": "Sepsis secondary to community-acquired pneumonia",
+          "start": "2026-02-02",
+          "end": "2026-02-07"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Admission History and Physical",
+          "date": "2026-02-02",
+          "author": "Dr. Hannah Lee",
+          "text": "Chief Complaint: fever, productive cough, and confusion for two days. 50-year-old man with hypertension and former tobacco use. Temperature 39.1 C, BP 92/58, HR 118, RR 28, SpO2 89% on room air. Examination: ill-appearing, crackles and egophony at the right base. Labs: WBC 22.4, lactate 4.2 mmol/L, procalcitonin 8.1 ng/mL, creatinine 1.6, sodium 132. Chest CT: dense right lower lobe consolidation with air bronchograms and a small parapneumonic effusion. Blood cultures drawn. Assessment: sepsis secondary to community-acquired pneumonia, likely Streptococcus pneumoniae. Plan: ceftriaxone and azithromycin, 30 mL/kg crystalloid bolus, supplemental oxygen, ICU consultation, repeat lactate."
+        },
+        {
+          "type": "Imaging Report",
+          "title": "CT Chest with Contrast",
+          "date": "2026-02-02",
+          "author": "Dr. M. Rosen",
+          "text": "CT chest with intravenous contrast. Dense consolidation in the right lower lobe with air bronchograms. Small right parapneumonic pleural effusion. No pulmonary embolism. No pneumothorax. Mediastinal lymphadenopathy reactive in appearance. Impression: right lower lobe pneumonia with small parapneumonic effusion."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "WBC",
+          "value": 22.4,
+          "unit": "10^3/uL",
+          "reference_range": "4.0-11.0",
+          "date": "2026-02-02"
+        },
+        {
+          "test_name": "Lactate",
+          "value": 4.2,
+          "unit": "mmol/L",
+          "reference_range": "0.5-2.0",
+          "date": "2026-02-02"
+        },
+        {
+          "test_name": "Procalcitonin",
+          "value": 8.1,
+          "unit": "ng/mL",
+          "reference_range": "<0.1",
+          "date": "2026-02-02"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 1.6,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-02-02"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 132,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-02-02"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.8,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-02-02"
+        },
+        {
+          "test_name": "Platelets",
+          "value": 210,
+          "unit": "10^3/uL",
+          "reference_range": "150-400",
+          "date": "2026-02-02"
+        }
+      ]
+    },
+    {
+      "mrn": "101230",
+      "first_name": "Sofia",
+      "last_name": "Alvarez",
+      "dob": "09/09/1988",
+      "gender": "female",
+      "phone": "917-555-0110",
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Migraine follow-up",
+          "start": "2026-03-18"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Consultation",
+          "title": "Neurology Consultation - Headache",
+          "date": "2026-03-18",
+          "author": "Dr. Ravi Shah",
+          "text": "Chief Complaint: recurrent throbbing headaches for six months. 37-year-old woman with a history of episodic migraine without aura. Headaches occur 3-4 times per month, unilateral left temporal, associated with photophobia, nausea, and occasional visual shimmering lasting 20 minutes. No fever, neck stiffness, weakness, or speech difficulty. Neurological examination normal, including fundoscopy and cranial nerves. MRI brain without contrast: no acute infarct, mass, or hemorrhage; a few nonspecific white matter foci. Assessment: migraine without aura, stable; medication overuse headache not present. Plan: continue sumatriptan as needed, start propranolol 20 mg BID for prevention, headache diary, follow up in 8 weeks."
+        },
+        {
+          "type": "Imaging Report",
+          "title": "MRI Brain without Contrast",
+          "date": "2026-03-16",
+          "author": "Dr. M. Rosen",
+          "text": "MRI brain without and with diffusion-weighted imaging. No acute infarction, intracranial hemorrhage, mass lesion, or midline shift. Ventricles and sulci are age-appropriate. A few tiny nonspecific subcortical white matter hyperintensities. Orbits and paranasal sinuses unremarkable. Impression: no acute intracranial abnormality."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.4,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-03-18"
+        },
+        {
+          "test_name": "TSH",
+          "value": 1.8,
+          "unit": "mIU/L",
+          "reference_range": "0.4-4.0",
+          "date": "2026-03-18"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 140,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-03-18"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 92,
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "date": "2026-03-18"
+        }
+      ]
+    },
+    {
+      "mrn": "101455",
+      "first_name": "Henry",
+      "last_name": "Whitfield",
+      "dob": "12/01/1936",
+      "gender": "male",
+      "phone": "555-CALL",
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Prostate cancer follow-up",
+          "start": "2026-04-08"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Consultation",
+          "title": "Oncology Consultation - Rising PSA",
+          "date": "2026-04-08",
+          "author": "Dr. Priya Desai",
+          "text": "Oncology Consultation. Chief Complaint: rising PSA and bone pain. 89-year-old man with a history of localized prostate adenocarcinoma diagnosed in 2019, treated with external beam radiation. Current PSA 18.4 ng/mL, up from 4.2 six months ago. Reports new dull lower back pain. Examination: ECOG 1, no focal neurologic deficit, back tender to palpation at L3. Bone scan: increased uptake in the L3 vertebral body and right posterior iliac crest, concerning for osseous metastases. Labs: hemoglobin 10.8 g/dL, creatinine 1.2, alkaline phosphatase 168 U/L, PSA 18.4. Assessment: biochemically recurrent prostate cancer with suspected bone metastases. Plan: CT abdomen/pelvis, MRI lumbar spine, start androgen deprivation therapy with leuprolide, bone health optimization with denosumab, palliative care referral, follow-up in 4 weeks."
+        },
+        {
+          "type": "Imaging Report",
+          "title": "Whole-Body Bone Scan",
+          "date": "2026-04-07",
+          "author": "Dr. M. Rosen",
+          "text": "Whole-body bone scan. Focal increased radiotracer uptake in the L3 vertebral body and right posterior iliac crest. No other suspicious foci. Kidneys and bladder visualize normally. Impression: two foci suspicious for osseous metastatic disease; correlate with MRI."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "PSA",
+          "value": 18.4,
+          "unit": "ng/mL",
+          "reference_range": "<4.0",
+          "date": "2026-04-08"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 10.8,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-04-08"
+        },
+        {
+          "test_name": "Alkaline Phosphatase",
+          "value": 168,
+          "unit": "U/L",
+          "reference_range": "44-147",
+          "date": "2026-04-08"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 1.2,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-04-08"
+        }
+      ]
+    },
+    {
+      "mrn": "101678",
+      "first_name": "Aisha",
+      "last_name": "Nakamura",
+      "dob": "03/27/1995",
+      "gender": "F",
+      "phone": "212-555-0155",
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Hypothyroidism follow-up",
+          "start": "2026-02-25"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Hypothyroidism Follow-up",
+          "date": "2026-02-25",
+          "author": "Dr. Lena Brooks",
+          "text": "Chief Complaint: fatigue and cold intolerance. 30-year-old woman with Hashimoto thyroiditis on levothyroxine 50 mcg daily. Reports fatigue, constipation, and dry skin for three months. Examination: bradycardia 58 bpm, dry skin, delayed relaxation of deep tendon reflexes, no goiter. Labs: TSH 8.9 mIU/L, free T4 0.7 ng/dL, hemoglobin 11.9, vitamin D 22 ng/mL. Assessment: inadequately treated primary hypothyroidism, vitamin D insufficiency. Plan: increase levothyroxine to 75 mcg daily, recheck TSH in 6 weeks, vitamin D3 2000 IU daily, counsel on adherence."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "TSH",
+          "value": 8.9,
+          "unit": "mIU/L",
+          "reference_range": "0.4-4.0",
+          "date": "2026-02-25"
+        },
+        {
+          "test_name": "Free T4",
+          "value": 0.7,
+          "unit": "ng/dL",
+          "reference_range": "0.8-1.8",
+          "date": "2026-02-25"
+        },
+        {
+          "test_name": "Vitamin D",
+          "value": 22,
+          "unit": "ng/mL",
+          "reference_range": "30-100",
+          "date": "2026-02-25"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 11.9,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-02-25"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 139,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-02-25"
+        }
+      ]
+    },
+    {
+      "mrn": "101899",
+      "first_name": "Daniel",
+      "last_name": "Okafor",
+      "dob": "06/14/1969",
+      "gender": "M",
+      "phone": "718-555-0166",
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Cirrhosis decompensation",
+          "start": "2026-03-29"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Consultation",
+          "title": "Hepatology Consultation - Decompensated Cirrhosis",
+          "date": "2026-03-29",
+          "author": "Dr. Miriam Goldstein",
+          "text": "Hepatology Consultation. Chief Complaint: abdominal distension and fatigue. 56-year-old man with alcohol-associated cirrhosis, portal hypertension, and prior variceal bleed. Reports increasing abdominal girth over three weeks and early satiety. Examination: scleral icterus, spider angiomata, tense ascites, no hepatic encephalopathy. Labs: platelets 78, total bilirubin 3.4 mg/dL, INR 1.9, albumin 2.6 g/dL, creatinine 1.1, sodium 129, AST 68, ALT 42. CT abdomen: nodular cirrhotic liver, moderate ascites, splenomegaly, patent portal vein, no hepatocellular carcinoma. Assessment: decompensated cirrhosis with ascites and coagulopathy; hyponatremia. Plan: therapeutic paracentesis with albumin, spironolactone 100 mg and furosemide 40 mg daily, sodium restriction, band surveillance in 2 weeks, transplant evaluation referral, alcohol cessation counseling."
+        },
+        {
+          "type": "Imaging Report",
+          "title": "CT Abdomen and Pelvis with Contrast",
+          "date": "2026-03-28",
+          "author": "Dr. M. Rosen",
+          "text": "CT abdomen and pelvis with contrast. Cirrhotic liver with nodular contour and moderate ascites. Spleen enlarged at 15 cm. Portal and splenic veins patent. No focal hepatic lesion. Small hiatal hernia. Impression: cirrhosis with portal hypertension and moderate ascites; no hepatocellular carcinoma."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Platelets",
+          "value": 78,
+          "unit": "10^3/uL",
+          "reference_range": "150-400",
+          "date": "2026-03-29"
+        },
+        {
+          "test_name": "Total Bilirubin",
+          "value": 3.4,
+          "unit": "mg/dL",
+          "reference_range": "0.1-1.2",
+          "date": "2026-03-29"
+        },
+        {
+          "test_name": "INR",
+          "value": 1.9,
+          "unit": "ratio",
+          "reference_range": "0.8-1.2",
+          "date": "2026-03-29"
+        },
+        {
+          "test_name": "Albumin",
+          "value": 2.6,
+          "unit": "g/dL",
+          "reference_range": "3.5-5.0",
+          "date": "2026-03-29"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 129,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-03-29"
+        },
+        {
+          "test_name": "AST",
+          "value": 68,
+          "unit": "U/L",
+          "reference_range": "10-40",
+          "date": "2026-03-29"
+        },
+        {
+          "test_name": "ALT",
+          "value": 42,
+          "unit": "U/L",
+          "reference_range": "7-56",
+          "date": "2026-03-29"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 1.1,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-03-29"
+        }
+      ]
+    },
+    {
+      "mrn": "101899",
+      "first_name": "Daniel",
+      "last_name": "Okafo",
+      "dob": "06/15/1969",
+      "gender": "M",
+      "phone": "718-555-0166",
+      "documents": [],
+      "labs": []
+    },
+    {
+      "mrn": "102120",
+      "first_name": "Grace",
+      "last_name": "Lindqvist",
+      "gender": "F",
+      "phone": "347-555-0188",
+      "encounters": [
+        {
+          "class": "EMER",
+          "reason": "COPD exacerbation",
+          "start": "2026-01-30"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Emergency Department Note - COPD Exacerbation",
+          "date": "2026-01-30",
+          "author": "Dr. Samuel Ortiz",
+          "text": "Emergency Department Note. Chief Complaint: increased sputum and breathlessness. 72-year-old woman with severe COPD (FEV1 38% predicted), former smoker, and hypertension. Reports three days of purulent sputum and worsening dyspnea. Examination: RR 24, SpO2 88% on room air, barrel chest, diffuse wheezes and coarse crackles. Chest radiograph: hyperinflation and increased bibasilar markings, no consolidation or pneumothorax. Labs: WBC 12.8, hemoglobin 14.2, sodium 136, potassium 4.1, bicarbonate 32. Treatment: controlled oxygen to SpO2 90-92%, ipratropium-albuterol nebulizers, prednisone 40 mg, doxycycline, noninvasive ventilation considered but not required. Assessment: COPD exacerbation, likely bacterial bronchitis. Plan: prednisone taper, antibiotic course, inhaler technique review, pulmonary rehab referral."
+        },
+        {
+          "type": "Imaging Report",
+          "title": "Chest Radiograph - COPD Exacerbation",
+          "date": "2026-01-30",
+          "author": "Dr. M. Rosen",
+          "text": "Chest radiograph. Hyperinflated lungs with flattened hemidiaphragms. Increased bibasilar bronchovascular markings. No focal consolidation, pleural effusion, or pneumothorax. Impression: changes of COPD without acute infiltrate."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "WBC",
+          "value": 12.8,
+          "unit": "10^3/uL",
+          "reference_range": "4.0-11.0",
+          "date": "2026-01-30"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 14.2,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-01-30"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 136,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-01-30"
+        },
+        {
+          "test_name": "Potassium",
+          "value": 4.1,
+          "unit": "mmol/L",
+          "reference_range": "3.5-5.1",
+          "date": "2026-01-30"
+        },
+        {
+          "test_name": "Bicarbonate",
+          "value": 32,
+          "unit": "mmol/L",
+          "reference_range": "22-29",
+          "date": "2026-01-30"
+        }
+      ]
+    },
+    {
+      "mrn": "102344",
+      "first_name": "Robert",
+      "last_name": "Chen",
+      "dob": "08/05/1981",
+      "gender": "M",
+      "phone": "646-555-0129",
+      "encounters": [
+        {
+          "class": "EMER",
+          "reason": "Renal colic",
+          "start": "2026-05-10"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Emergency Department Note - Renal Colic",
+          "date": "2026-05-10",
+          "author": "Dr. Samuel Ortiz",
+          "text": "Emergency Department Note. Chief Complaint: severe right flank pain radiating to the groin for six hours, associated with nausea and hematuria. 44-year-old man with no prior kidney stones. Temperature 37.2 C, BP 138/84, HR 96. Examination: right costovertebral angle tenderness, no peritoneal signs. Urinalysis: 3+ blood, 1+ protein, negative nitrite and leukocyte esterase. CT abdomen/pelvis without contrast: 6 mm obstructing stone at the right ureterovesical junction with mild right hydronephrosis. Labs: creatinine 1.0, WBC 12.1, sodium 139. Assessment: right ureteral stone with mild obstruction; no signs of infection. Plan: ketorolac, tamsulosin 0.4 mg daily, strain urine, urology follow-up, return for fever or uncontrolled pain."
+        },
+        {
+          "type": "Imaging Report",
+          "title": "CT Abdomen and Pelvis without Contrast",
+          "date": "2026-05-10",
+          "author": "Dr. M. Rosen",
+          "text": "CT abdomen and pelvis without contrast. A 6 mm calcified stone is seen at the right ureterovesical junction with mild proximal right hydronephrosis. No left-sided stone. No appendicitis or diverticulitis. Impression: obstructing right distal ureteral calculus with mild hydronephrosis."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Creatinine",
+          "value": 1.0,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-05-10"
+        },
+        {
+          "test_name": "WBC",
+          "value": 12.1,
+          "unit": "10^3/uL",
+          "reference_range": "4.0-11.0",
+          "date": "2026-05-10"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 139,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-05-10"
+        }
+      ]
+    },
+    {
+      "mrn": "102566",
+      "first_name": "Lena",
+      "last_name": "Petrova",
+      "dob": "05/16/2001",
+      "gender": "",
+      "phone": "646-555-0133",
+      "encounters": [
+        {
+          "class": "EMER",
+          "reason": "Acute appendicitis",
+          "start": "2026-04-02"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Emergency Department Note - Abdominal Pain",
+          "date": "2026-04-02",
+          "author": "Dr. Hannah Lee",
+          "text": "Emergency Department Note. Chief Complaint: periumbilical pain migrating to the right lower quadrant for 18 hours, with nausea and low-grade fever. 24-year-old woman, no significant past medical history. Temperature 38.0 C, HR 102, BP 118/72. Examination: tenderness at McBurney point with guarding and rebound. Labs: WBC 15.2, hemoglobin 12.8, sodium 137. Ultrasound abdomen: enlarged non-compressible appendix measuring 9 mm with surrounding fat stranding and a small amount of free fluid; no appendicolith. Assessment: acute uncomplicated appendicitis. Plan: NPO, IV fluids, ceftriaxone and metronidazole, general surgery consultation for laparoscopic appendectomy."
+        },
+        {
+          "type": "Imaging Report",
+          "title": "Ultrasound Abdomen and Pelvis",
+          "date": "2026-04-02",
+          "author": "Dr. M. Rosen",
+          "text": "Ultrasound abdomen and pelvis. The appendix is enlarged, non-compressible, and measures 9 mm in diameter with surrounding hyperechoic fat stranding. A small amount of free fluid is present in the right lower quadrant. No abscess. Impression: sonographic findings compatible with acute appendicitis."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "WBC",
+          "value": 15.2,
+          "unit": "10^3/uL",
+          "reference_range": "4.0-11.0",
+          "date": "2026-04-02"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 12.8,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-04-02"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 137,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-04-02"
+        }
+      ]
+    },
+    {
+      "mrn": "102789",
+      "first_name": "Omar",
+      "last_name": "Haddad",
+      "dob": "10/21/1943",
+      "gender": "M",
+      "phone": "212-555-0177",
+      "encounters": [
+        {
+          "class": "EMER",
+          "reason": "Acute ischemic stroke",
+          "start": "2026-06-05"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Stroke Neurology Note - Code Stroke",
+          "date": "2026-06-05",
+          "author": "Dr. Ravi Shah",
+          "text": "Stroke Neurology Note. Chief Complaint: sudden right-sided weakness and difficulty speaking. 82-year-old man with hypertension, hyperlipidemia, and atrial fibrillation not on anticoagulation. Last known well 07:30; arrived 08:05. NIHSS 9 for right facial droop, right arm and leg weakness, and mild expressive aphasia. CT head without contrast: no hemorrhage; early ischemic changes not visualized. CT angiography: occlusion of the left middle cerebral artery M2 segment. Labs: glucose 118, INR 1.1, platelets 210, creatinine 1.3. Given alteplase at 08:40 after blood pressure control. Admitted to the stroke unit. MRI brain confirmed acute left MCA territory infarct. Assessment: acute ischemic stroke, left MCA M2 occlusion, atrial fibrillation. Plan: stroke unit monitoring, dysphagia screening, start anticoagulation after 24 hours, physical and speech therapy, echocardiogram."
+        },
+        {
+          "type": "Imaging Report",
+          "title": "MRI Brain with Diffusion-Weighted Imaging",
+          "date": "2026-06-05",
+          "author": "Dr. M. Rosen",
+          "text": "MRI brain with diffusion-weighted imaging. Restricted diffusion in the left insular cortex and left frontal operculum consistent with acute infarction in the left middle cerebral artery territory. No hemorrhage. No mass effect. MRA demonstrates occlusion of the left M2 segment. Impression: acute left MCA territory infarct."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Glucose",
+          "value": 118,
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "date": "2026-06-05"
+        },
+        {
+          "test_name": "INR",
+          "value": 1.1,
+          "unit": "ratio",
+          "reference_range": "0.8-1.2",
+          "date": "2026-06-05"
+        },
+        {
+          "test_name": "Platelets",
+          "value": 210,
+          "unit": "10^3/uL",
+          "reference_range": "150-400",
+          "date": "2026-06-05"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 1.3,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-06-05"
+        },
+        {
+          "test_name": "LDL Cholesterol",
+          "value": 142,
+          "unit": "mg/dL",
+          "reference_range": "<100",
+          "date": "2026-06-05"
+        }
+      ]
+    },
+    {
+      "mrn": "00103000",
+      "first_name": "Alice",
+      "last_name": "Nguyen",
+      "dob": "1950-01-01",
+      "gender": "F",
+      "phone": "212-555-2000",
+      "email": "alice.nguyen@example.org",
+      "address": {
+        "line": "100 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10000"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Hypertension follow-up",
+          "start": "2026-06-01"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Hypertension follow-up",
+          "date": "2026-06-01",
+          "author": "Dr. Samuel Ortiz",
+          "text": "Hypertension follow-up visit. Chief Complaint: blood pressure follow-up. 76-year-old woman with a history of hypertension follow-up. Reports adherence to medications with no acute distress. Examination: BP 128/76, HR 68, afebrile, cardiopulmonary examination unremarkable. Assessment: hypertension above goal. Plan: increase lisinopril to 20 mg daily, home blood pressure log, low-sodium diet, recheck in 4 weeks."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Sodium",
+          "value": 139,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-06-01"
+        },
+        {
+          "test_name": "Potassium",
+          "value": 4.2,
+          "unit": "mmol/L",
+          "reference_range": "3.5-5.1",
+          "date": "2026-06-01"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 1.0,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-06-01"
+        }
+      ]
+    },
+    {
+      "mrn": "00103007",
+      "first_name": "Benjamin",
+      "last_name": "Carter",
+      "dob": "1957-02-02",
+      "gender": "M",
+      "phone": "212-555-2001",
+      "email": "benjamin.carter@example.org",
+      "address": {
+        "line": "101 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10001"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Type 2 diabetes follow-up",
+          "start": "2026-06-04"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Type 2 diabetes follow-up",
+          "date": "2026-06-04",
+          "author": "Dr. Lena Brooks",
+          "text": "Type 2 diabetes follow-up visit. Chief Complaint: diabetes follow-up. 69-year-old man with a history of type 2 diabetes follow-up. Reports adherence to medications with no acute distress. Examination: BP 133/79, HR 69, afebrile, cardiopulmonary examination unremarkable. Assessment: type 2 diabetes with HbA1c above goal. Plan: continue metformin, add empagliflozin, diabetes education, repeat HbA1c in 3 months."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "HbA1c",
+          "value": 7.9,
+          "unit": "%",
+          "reference_range": "4.0-5.6",
+          "date": "2026-06-04"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 168,
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "date": "2026-06-04"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 0.9,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-06-04"
+        }
+      ]
+    },
+    {
+      "mrn": "00103014",
+      "first_name": "Camila",
+      "last_name": "Torres",
+      "dob": "1964-03-03",
+      "gender": "F",
+      "phone": "212-555-2002",
+      "email": "camila.torres@example.org",
+      "address": {
+        "line": "102 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10002"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Annual physical examination",
+          "start": "2026-06-07"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Annual physical examination",
+          "date": "2026-06-07",
+          "author": "Dr. Lena Brooks",
+          "text": "Annual physical examination visit. Chief Complaint: routine annual physical. 62-year-old woman with a history of annual physical examination. Reports adherence to medications with no acute distress. Examination: BP 138/82, HR 70, afebrile, cardiopulmonary examination unremarkable. Assessment: healthy adult with borderline LDL cholesterol. Plan: diet and exercise counseling, repeat lipids in 6 months, age-appropriate screening."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.8,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-06-07"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 96,
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "date": "2026-06-07"
+        },
+        {
+          "test_name": "LDL Cholesterol",
+          "value": 112,
+          "unit": "mg/dL",
+          "reference_range": "<100",
+          "date": "2026-06-07"
+        }
+      ]
+    },
+    {
+      "mrn": "00103021",
+      "first_name": "David",
+      "last_name": "Kim",
+      "dob": "1971-04-04",
+      "gender": "M",
+      "phone": "212-555-2003",
+      "email": "david.kim@example.org",
+      "address": {
+        "line": "103 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10003"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Upper respiratory infection",
+          "start": "2026-06-10"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Upper respiratory infection",
+          "date": "2026-06-10",
+          "author": "Dr. Samuel Ortiz",
+          "text": "Upper respiratory infection visit. Chief Complaint: sore throat and nasal congestion for four days. 55-year-old man with a history of upper respiratory infection. Reports adherence to medications with no acute distress. Examination: BP 143/85, HR 71, afebrile, cardiopulmonary examination unremarkable. Assessment: viral upper respiratory infection. Plan: supportive care, fluids, rest, return if fever or shortness of breath develops."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "WBC",
+          "value": 7.2,
+          "unit": "10^3/uL",
+          "reference_range": "4.0-11.0",
+          "date": "2026-06-10"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 138,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-06-10"
+        }
+      ]
+    },
+    {
+      "mrn": "00103028",
+      "first_name": "Elena",
+      "last_name": "Rossi",
+      "dob": "1978-05-05",
+      "gender": "F",
+      "phone": "212-555-2004",
+      "email": "elena.rossi@example.org",
+      "address": {
+        "line": "104 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10004"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Mechanical low back pain",
+          "start": "2026-06-13"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Mechanical low back pain",
+          "date": "2026-06-13",
+          "author": "Dr. Lena Brooks",
+          "text": "Mechanical low back pain visit. Chief Complaint: lower back pain after lifting. 48-year-old woman with a history of mechanical low back pain. Reports adherence to medications with no acute distress. Examination: BP 148/88, HR 72, afebrile, cardiopulmonary examination unremarkable. Assessment: mechanical low back pain without red flags. Plan: NSAIDs as needed, physical therapy referral, return precautions for weakness or incontinence."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Hemoglobin",
+          "value": 14.1,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-06-13"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 0.9,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "mrn": "00103035",
+      "first_name": "Farah",
+      "last_name": "Ahmed",
+      "dob": "1985-06-06",
+      "gender": "M",
+      "phone": "212-555-2005",
+      "email": "farah.ahmed@example.org",
+      "address": {
+        "line": "105 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10005"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Hyperlipidemia follow-up",
+          "start": "2026-06-16"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Hyperlipidemia follow-up",
+          "date": "2026-06-16",
+          "author": "Dr. Lena Brooks",
+          "text": "Hyperlipidemia follow-up visit. Chief Complaint: cholesterol follow-up. 41-year-old man with a history of hyperlipidemia follow-up. Reports adherence to medications with no acute distress. Examination: BP 153/77, HR 73, afebrile, cardiopulmonary examination unremarkable. Assessment: hyperlipidemia not at LDL goal. Plan: increase atorvastatin to 40 mg nightly, repeat lipid panel in 8 weeks, continue Mediterranean diet."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "LDL Cholesterol",
+          "value": 156,
+          "unit": "mg/dL",
+          "reference_range": "<100",
+          "date": "2026-06-16"
+        },
+        {
+          "test_name": "HDL Cholesterol",
+          "value": 44,
+          "unit": "mg/dL",
+          "reference_range": ">40",
+          "date": "2026-06-16"
+        },
+        {
+          "test_name": "Triglycerides",
+          "value": 180,
+          "unit": "mg/dL",
+          "reference_range": "<150",
+          "date": "2026-06-16"
+        },
+        {
+          "test_name": "ALT",
+          "value": 32,
+          "unit": "U/L",
+          "reference_range": "7-56",
+          "date": "2026-06-16"
+        }
+      ]
+    },
+    {
+      "mrn": "00103042",
+      "first_name": "Gabriel",
+      "last_name": "Silva",
+      "dob": "1992-07-07",
+      "gender": "F",
+      "phone": "212-555-2006",
+      "email": "gabriel.silva@example.org",
+      "address": {
+        "line": "106 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10006"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Gastroesophageal reflux disease",
+          "start": "2026-06-19"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Gastroesophageal reflux disease",
+          "date": "2026-06-19",
+          "author": "Dr. Samuel Ortiz",
+          "text": "Gastroesophageal reflux disease visit. Chief Complaint: heartburn and regurgitation. 33-year-old woman with a history of gastroesophageal reflux disease. Reports adherence to medications with no acute distress. Examination: BP 130/80, HR 74, afebrile, cardiopulmonary examination unremarkable. Assessment: gastroesophageal reflux disease without alarm features. Plan: omeprazole 20 mg daily before breakfast, avoid late meals, weight management, reassess in 6 weeks."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.1,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-06-19"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 140,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-06-19"
+        }
+      ]
+    },
+    {
+      "mrn": "00103049",
+      "first_name": "Hannah",
+      "last_name": "Cohen",
+      "dob": "1954-08-08",
+      "gender": "M",
+      "phone": "212-555-2007",
+      "email": "hannah.cohen@example.org",
+      "address": {
+        "line": "107 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10007"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Knee osteoarthritis",
+          "start": "2026-06-22"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Knee osteoarthritis",
+          "date": "2026-06-22",
+          "author": "Dr. Lena Brooks",
+          "text": "Knee osteoarthritis visit. Chief Complaint: right knee pain with activity. 71-year-old man with a history of knee osteoarthritis. Reports adherence to medications with no acute distress. Examination: BP 135/83, HR 75, afebrile, cardiopulmonary examination unremarkable. Assessment: moderate right knee osteoarthritis. Plan: physical therapy, topical diclofenac, weight management, consider intra-articular injection."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "CRP",
+          "value": 6,
+          "unit": "mg/L",
+          "reference_range": "<10",
+          "date": "2026-06-22"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.5,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-06-22"
+        }
+      ]
+    },
+    {
+      "mrn": "00103056",
+      "first_name": "Ibrahim",
+      "last_name": "Yusuf",
+      "dob": "1961-09-09",
+      "gender": "F",
+      "phone": "212-555-2008",
+      "email": "ibrahim.yusuf@example.org",
+      "address": {
+        "line": "108 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10008"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Anxiety follow-up",
+          "start": "2026-06-25"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Anxiety follow-up",
+          "date": "2026-06-25",
+          "author": "Dr. Lena Brooks",
+          "text": "Anxiety follow-up visit. Chief Complaint: anxiety and poor sleep. 64-year-old woman with a history of anxiety follow-up. Reports adherence to medications with no acute distress. Examination: BP 140/86, HR 76, afebrile, cardiopulmonary examination unremarkable. Assessment: generalized anxiety disorder, improving on therapy. Plan: continue sertraline 50 mg daily, cognitive behavioral therapy, sleep hygiene, follow up in 6 weeks."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "TSH",
+          "value": 2.1,
+          "unit": "mIU/L",
+          "reference_range": "0.4-4.0",
+          "date": "2026-06-25"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 12.9,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-06-25"
+        }
+      ]
+    },
+    {
+      "mrn": "00103063",
+      "first_name": "Julia",
+      "last_name": "Novak",
+      "dob": "1968-10-10",
+      "gender": "M",
+      "phone": "212-555-2009",
+      "email": "julia.novak@example.org",
+      "address": {
+        "line": "109 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10009"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Asthma follow-up",
+          "start": "2026-06-28"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Asthma follow-up",
+          "date": "2026-06-28",
+          "author": "Dr. Samuel Ortiz",
+          "text": "Asthma follow-up visit. Chief Complaint: asthma control check. 57-year-old man with a history of asthma follow-up. Reports adherence to medications with no acute distress. Examination: BP 145/89, HR 77, afebrile, cardiopulmonary examination unremarkable. Assessment: well-controlled asthma with normal peak flow. Plan: continue inhaled corticosteroid-formoterol as needed, refill albuterol, asthma action plan reviewed."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "WBC",
+          "value": 6.8,
+          "unit": "10^3/uL",
+          "reference_range": "4.0-11.0",
+          "date": "2026-06-28"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.6,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-06-28"
+        }
+      ]
+    },
+    {
+      "mrn": "00103070",
+      "first_name": "Kevin",
+      "last_name": "O'Brien",
+      "dob": "1975-11-11",
+      "gender": "F",
+      "phone": "212-555-2010",
+      "email": "kevin.o'brien@example.org",
+      "address": {
+        "line": "110 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10010"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Hypertension follow-up",
+          "start": "2026-07-01"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Hypertension follow-up",
+          "date": "2026-07-01",
+          "author": "Dr. Lena Brooks",
+          "text": "Hypertension follow-up visit. Chief Complaint: blood pressure follow-up. 50-year-old woman with a history of hypertension follow-up. Reports adherence to medications with no acute distress. Examination: BP 150/78, HR 78, afebrile, cardiopulmonary examination unremarkable. Assessment: hypertension above goal. Plan: increase lisinopril to 20 mg daily, home blood pressure log, low-sodium diet, recheck in 4 weeks."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Sodium",
+          "value": 139,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-07-01"
+        },
+        {
+          "test_name": "Potassium",
+          "value": 4.2,
+          "unit": "mmol/L",
+          "reference_range": "3.5-5.1",
+          "date": "2026-07-01"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 1.0,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-07-01"
+        }
+      ]
+    },
+    {
+      "mrn": "00103077",
+      "first_name": "Lucia",
+      "last_name": "Moreno",
+      "dob": "1982-12-12",
+      "gender": "M",
+      "phone": "212-555-2011",
+      "email": "lucia.moreno@example.org",
+      "address": {
+        "line": "111 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10011"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Type 2 diabetes follow-up",
+          "start": "2026-07-04"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Type 2 diabetes follow-up",
+          "date": "2026-07-04",
+          "author": "Dr. Lena Brooks",
+          "text": "Type 2 diabetes follow-up visit. Chief Complaint: diabetes follow-up. 43-year-old man with a history of type 2 diabetes follow-up. Reports adherence to medications with no acute distress. Examination: BP 155/81, HR 79, afebrile, cardiopulmonary examination unremarkable. Assessment: type 2 diabetes with HbA1c above goal. Plan: continue metformin, add empagliflozin, diabetes education, repeat HbA1c in 3 months."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "HbA1c",
+          "value": 7.9,
+          "unit": "%",
+          "reference_range": "4.0-5.6",
+          "date": "2026-07-04"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 168,
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "date": "2026-07-04"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 0.9,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-07-04"
+        }
+      ]
+    },
+    {
+      "mrn": "00103084",
+      "first_name": "Michael",
+      "last_name": "Zhang",
+      "dob": "1989-01-13",
+      "gender": "F",
+      "phone": "212-555-2012",
+      "email": "michael.zhang@example.org",
+      "address": {
+        "line": "112 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10012"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Annual physical examination",
+          "start": "2026-07-07"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Annual physical examination",
+          "date": "2026-07-07",
+          "author": "Dr. Samuel Ortiz",
+          "text": "Annual physical examination visit. Chief Complaint: routine annual physical. 37-year-old woman with a history of annual physical examination. Reports adherence to medications with no acute distress. Examination: BP 132/84, HR 80, afebrile, cardiopulmonary examination unremarkable. Assessment: healthy adult with borderline LDL cholesterol. Plan: diet and exercise counseling, repeat lipids in 6 months, age-appropriate screening."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.8,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-07-07"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 96,
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "date": "2026-07-07"
+        },
+        {
+          "test_name": "LDL Cholesterol",
+          "value": 112,
+          "unit": "mg/dL",
+          "reference_range": "<100",
+          "date": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "mrn": "00103091",
+      "first_name": "Nadia",
+      "last_name": "Hassan",
+      "dob": "1951-02-14",
+      "gender": "M",
+      "phone": "212-555-2013",
+      "email": "nadia.hassan@example.org",
+      "address": {
+        "line": "113 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10013"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Upper respiratory infection",
+          "start": "2026-07-10"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Upper respiratory infection",
+          "date": "2026-07-10",
+          "author": "Dr. Lena Brooks",
+          "text": "Upper respiratory infection visit. Chief Complaint: sore throat and nasal congestion for four days. 75-year-old man with a history of upper respiratory infection. Reports adherence to medications with no acute distress. Examination: BP 137/87, HR 81, afebrile, cardiopulmonary examination unremarkable. Assessment: viral upper respiratory infection. Plan: supportive care, fluids, rest, return if fever or shortness of breath develops."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "WBC",
+          "value": 7.2,
+          "unit": "10^3/uL",
+          "reference_range": "4.0-11.0",
+          "date": "2026-07-10"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 138,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "mrn": "00103098",
+      "first_name": "Oscar",
+      "last_name": "Lindgren",
+      "dob": "1958-03-15",
+      "gender": "F",
+      "phone": "212-555-2014",
+      "email": "oscar.lindgren@example.org",
+      "address": {
+        "line": "114 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10014"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Mechanical low back pain",
+          "start": "2026-07-13"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Mechanical low back pain",
+          "date": "2026-07-13",
+          "author": "Dr. Lena Brooks",
+          "text": "Mechanical low back pain visit. Chief Complaint: lower back pain after lifting. 68-year-old woman with a history of mechanical low back pain. Reports adherence to medications with no acute distress. Examination: BP 142/76, HR 82, afebrile, cardiopulmonary examination unremarkable. Assessment: mechanical low back pain without red flags. Plan: NSAIDs as needed, physical therapy referral, return precautions for weakness or incontinence."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Hemoglobin",
+          "value": 14.1,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-07-13"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 0.9,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-07-13"
+        }
+      ]
+    },
+    {
+      "mrn": "00103105",
+      "first_name": "Paula",
+      "last_name": "Ortiz",
+      "dob": "1965-04-16",
+      "gender": "M",
+      "phone": "212-555-2015",
+      "email": "paula.ortiz@example.org",
+      "address": {
+        "line": "115 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10015"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Hyperlipidemia follow-up",
+          "start": "2026-07-16"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Hyperlipidemia follow-up",
+          "date": "2026-07-16",
+          "author": "Dr. Samuel Ortiz",
+          "text": "Hyperlipidemia follow-up visit. Chief Complaint: cholesterol follow-up. 61-year-old man with a history of hyperlipidemia follow-up. Reports adherence to medications with no acute distress. Examination: BP 147/79, HR 83, afebrile, cardiopulmonary examination unremarkable. Assessment: hyperlipidemia not at LDL goal. Plan: increase atorvastatin to 40 mg nightly, repeat lipid panel in 8 weeks, continue Mediterranean diet."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "LDL Cholesterol",
+          "value": 156,
+          "unit": "mg/dL",
+          "reference_range": "<100",
+          "date": "2026-07-16"
+        },
+        {
+          "test_name": "HDL Cholesterol",
+          "value": 44,
+          "unit": "mg/dL",
+          "reference_range": ">40",
+          "date": "2026-07-16"
+        },
+        {
+          "test_name": "Triglycerides",
+          "value": 180,
+          "unit": "mg/dL",
+          "reference_range": "<150",
+          "date": "2026-07-16"
+        },
+        {
+          "test_name": "ALT",
+          "value": 32,
+          "unit": "U/L",
+          "reference_range": "7-56",
+          "date": "2026-07-16"
+        }
+      ]
+    },
+    {
+      "mrn": "00103112",
+      "first_name": "Quentin",
+      "last_name": "Brooks",
+      "dob": "1972-05-17",
+      "gender": "F",
+      "phone": "212-555-2016",
+      "email": "quentin.brooks@example.org",
+      "address": {
+        "line": "116 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10016"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Gastroesophageal reflux disease",
+          "start": "2026-07-19"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Gastroesophageal reflux disease",
+          "date": "2026-07-19",
+          "author": "Dr. Lena Brooks",
+          "text": "Gastroesophageal reflux disease visit. Chief Complaint: heartburn and regurgitation. 54-year-old woman with a history of gastroesophageal reflux disease. Reports adherence to medications with no acute distress. Examination: BP 152/82, HR 84, afebrile, cardiopulmonary examination unremarkable. Assessment: gastroesophageal reflux disease without alarm features. Plan: omeprazole 20 mg daily before breakfast, avoid late meals, weight management, reassess in 6 weeks."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.1,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-07-19"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 140,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "mrn": "00103119",
+      "first_name": "Rachel",
+      "last_name": "Adler",
+      "dob": "1979-06-18",
+      "gender": "M",
+      "phone": "212-555-2017",
+      "email": "rachel.adler@example.org",
+      "address": {
+        "line": "117 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10017"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Knee osteoarthritis",
+          "start": "2026-07-22"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Knee osteoarthritis",
+          "date": "2026-07-22",
+          "author": "Dr. Lena Brooks",
+          "text": "Knee osteoarthritis visit. Chief Complaint: right knee pain with activity. 47-year-old man with a history of knee osteoarthritis. Reports adherence to medications with no acute distress. Examination: BP 129/85, HR 85, afebrile, cardiopulmonary examination unremarkable. Assessment: moderate right knee osteoarthritis. Plan: physical therapy, topical diclofenac, weight management, consider intra-articular injection."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "CRP",
+          "value": 6,
+          "unit": "mg/L",
+          "reference_range": "<10",
+          "date": "2026-07-22"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.5,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "mrn": "00103126",
+      "first_name": "Samuel",
+      "last_name": "Osei",
+      "dob": "1986-07-19",
+      "gender": "F",
+      "phone": "212-555-2018",
+      "email": "samuel.osei@example.org",
+      "address": {
+        "line": "118 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10018"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Anxiety follow-up",
+          "start": "2026-07-25"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Anxiety follow-up",
+          "date": "2026-07-25",
+          "author": "Dr. Samuel Ortiz",
+          "text": "Anxiety follow-up visit. Chief Complaint: anxiety and poor sleep. 40-year-old woman with a history of anxiety follow-up. Reports adherence to medications with no acute distress. Examination: BP 134/88, HR 68, afebrile, cardiopulmonary examination unremarkable. Assessment: generalized anxiety disorder, improving on therapy. Plan: continue sertraline 50 mg daily, cognitive behavioral therapy, sleep hygiene, follow up in 6 weeks."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "TSH",
+          "value": 2.1,
+          "unit": "mIU/L",
+          "reference_range": "0.4-4.0",
+          "date": "2026-07-25"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 12.9,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-07-25"
+        }
+      ]
+    },
+    {
+      "mrn": "00103133",
+      "first_name": "Tanya",
+      "last_name": "Ivanova",
+      "dob": "1993-08-20",
+      "gender": "M",
+      "phone": "212-555-2019",
+      "email": "tanya.ivanova@example.org",
+      "address": {
+        "line": "119 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10019"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Asthma follow-up",
+          "start": "2026-07-28"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Asthma follow-up",
+          "date": "2026-07-28",
+          "author": "Dr. Lena Brooks",
+          "text": "Asthma follow-up visit. Chief Complaint: asthma control check. 32-year-old man with a history of asthma follow-up. Reports adherence to medications with no acute distress. Examination: BP 139/77, HR 69, afebrile, cardiopulmonary examination unremarkable. Assessment: well-controlled asthma with normal peak flow. Plan: continue inhaled corticosteroid-formoterol as needed, refill albuterol, asthma action plan reviewed."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "WBC",
+          "value": 6.8,
+          "unit": "10^3/uL",
+          "reference_range": "4.0-11.0",
+          "date": "2026-07-28"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.6,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-07-28"
+        }
+      ]
+    },
+    {
+      "mrn": "00103140",
+      "first_name": "Umar",
+      "last_name": "Farouk",
+      "dob": "1955-09-21",
+      "gender": "F",
+      "phone": "212-555-2020",
+      "email": "umar.farouk@example.org",
+      "address": {
+        "line": "120 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10020"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Hypertension follow-up",
+          "start": "2026-07-31"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Hypertension follow-up",
+          "date": "2026-07-31",
+          "author": "Dr. Lena Brooks",
+          "text": "Hypertension follow-up visit. Chief Complaint: blood pressure follow-up. 70-year-old woman with a history of hypertension follow-up. Reports adherence to medications with no acute distress. Examination: BP 144/80, HR 70, afebrile, cardiopulmonary examination unremarkable. Assessment: hypertension above goal. Plan: increase lisinopril to 20 mg daily, home blood pressure log, low-sodium diet, recheck in 4 weeks."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Sodium",
+          "value": 139,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-07-31"
+        },
+        {
+          "test_name": "Potassium",
+          "value": 4.2,
+          "unit": "mmol/L",
+          "reference_range": "3.5-5.1",
+          "date": "2026-07-31"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 1.0,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-07-31"
+        }
+      ]
+    },
+    {
+      "mrn": "00103147",
+      "first_name": "Vanessa",
+      "last_name": "Duarte",
+      "dob": "1962-10-22",
+      "gender": "M",
+      "phone": "212-555-2021",
+      "email": "vanessa.duarte@example.org",
+      "address": {
+        "line": "121 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10021"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Type 2 diabetes follow-up",
+          "start": "2026-08-03"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Type 2 diabetes follow-up",
+          "date": "2026-08-03",
+          "author": "Dr. Samuel Ortiz",
+          "text": "Type 2 diabetes follow-up visit. Chief Complaint: diabetes follow-up. 63-year-old man with a history of type 2 diabetes follow-up. Reports adherence to medications with no acute distress. Examination: BP 149/83, HR 71, afebrile, cardiopulmonary examination unremarkable. Assessment: type 2 diabetes with HbA1c above goal. Plan: continue metformin, add empagliflozin, diabetes education, repeat HbA1c in 3 months."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "HbA1c",
+          "value": 7.9,
+          "unit": "%",
+          "reference_range": "4.0-5.6",
+          "date": "2026-08-03"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 168,
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "date": "2026-08-03"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 0.9,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-08-03"
+        }
+      ]
+    },
+    {
+      "mrn": "00103154",
+      "first_name": "William",
+      "last_name": "Hayes",
+      "dob": "1969-11-23",
+      "gender": "F",
+      "phone": "212-555-2022",
+      "email": "william.hayes@example.org",
+      "address": {
+        "line": "122 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10022"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Annual physical examination",
+          "start": "2026-08-06"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Annual physical examination",
+          "date": "2026-08-06",
+          "author": "Dr. Lena Brooks",
+          "text": "Annual physical examination visit. Chief Complaint: routine annual physical. 56-year-old woman with a history of annual physical examination. Reports adherence to medications with no acute distress. Examination: BP 154/86, HR 72, afebrile, cardiopulmonary examination unremarkable. Assessment: healthy adult with borderline LDL cholesterol. Plan: diet and exercise counseling, repeat lipids in 6 months, age-appropriate screening."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.8,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-08-06"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 96,
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "date": "2026-08-06"
+        },
+        {
+          "test_name": "LDL Cholesterol",
+          "value": 112,
+          "unit": "mg/dL",
+          "reference_range": "<100",
+          "date": "2026-08-06"
+        }
+      ]
+    },
+    {
+      "mrn": "00103161",
+      "first_name": "Ximena",
+      "last_name": "Rojas",
+      "dob": "1976-12-24",
+      "gender": "M",
+      "phone": "212-555-2023",
+      "email": "ximena.rojas@example.org",
+      "address": {
+        "line": "123 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10023"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Upper respiratory infection",
+          "start": "2026-08-09"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Upper respiratory infection",
+          "date": "2026-08-09",
+          "author": "Dr. Lena Brooks",
+          "text": "Upper respiratory infection visit. Chief Complaint: sore throat and nasal congestion for four days. 49-year-old man with a history of upper respiratory infection. Reports adherence to medications with no acute distress. Examination: BP 131/89, HR 73, afebrile, cardiopulmonary examination unremarkable. Assessment: viral upper respiratory infection. Plan: supportive care, fluids, rest, return if fever or shortness of breath develops."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "WBC",
+          "value": 7.2,
+          "unit": "10^3/uL",
+          "reference_range": "4.0-11.0",
+          "date": "2026-08-09"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 138,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-08-09"
+        }
+      ]
+    },
+    {
+      "mrn": "00103168",
+      "first_name": "Yosef",
+      "last_name": "Ben-Ami",
+      "dob": "1983-01-25",
+      "gender": "F",
+      "phone": "212-555-2024",
+      "email": "yosef.ben-ami@example.org",
+      "address": {
+        "line": "124 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10024"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Mechanical low back pain",
+          "start": "2026-08-12"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Mechanical low back pain",
+          "date": "2026-08-12",
+          "author": "Dr. Samuel Ortiz",
+          "text": "Mechanical low back pain visit. Chief Complaint: lower back pain after lifting. 43-year-old woman with a history of mechanical low back pain. Reports adherence to medications with no acute distress. Examination: BP 136/78, HR 74, afebrile, cardiopulmonary examination unremarkable. Assessment: mechanical low back pain without red flags. Plan: NSAIDs as needed, physical therapy referral, return precautions for weakness or incontinence."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Hemoglobin",
+          "value": 14.1,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-08-12"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 0.9,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-08-12"
+        }
+      ]
+    },
+    {
+      "mrn": "00103175",
+      "first_name": "Zoe",
+      "last_name": "Caldwell",
+      "dob": "1990-02-26",
+      "gender": "M",
+      "phone": "212-555-2025",
+      "email": "zoe.caldwell@example.org",
+      "address": {
+        "line": "125 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10025"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Hyperlipidemia follow-up",
+          "start": "2026-08-15"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Hyperlipidemia follow-up",
+          "date": "2026-08-15",
+          "author": "Dr. Lena Brooks",
+          "text": "Hyperlipidemia follow-up visit. Chief Complaint: cholesterol follow-up. 36-year-old man with a history of hyperlipidemia follow-up. Reports adherence to medications with no acute distress. Examination: BP 141/81, HR 75, afebrile, cardiopulmonary examination unremarkable. Assessment: hyperlipidemia not at LDL goal. Plan: increase atorvastatin to 40 mg nightly, repeat lipid panel in 8 weeks, continue Mediterranean diet."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "LDL Cholesterol",
+          "value": 156,
+          "unit": "mg/dL",
+          "reference_range": "<100",
+          "date": "2026-08-15"
+        },
+        {
+          "test_name": "HDL Cholesterol",
+          "value": 44,
+          "unit": "mg/dL",
+          "reference_range": ">40",
+          "date": "2026-08-15"
+        },
+        {
+          "test_name": "Triglycerides",
+          "value": 180,
+          "unit": "mg/dL",
+          "reference_range": "<150",
+          "date": "2026-08-15"
+        },
+        {
+          "test_name": "ALT",
+          "value": 32,
+          "unit": "U/L",
+          "reference_range": "7-56",
+          "date": "2026-08-15"
+        }
+      ]
+    },
+    {
+      "mrn": "00103182",
+      "first_name": "Adrian",
+      "last_name": "Mensah",
+      "dob": "1952-03-27",
+      "gender": "F",
+      "phone": "212-555-2026",
+      "email": "adrian.mensah@example.org",
+      "address": {
+        "line": "126 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10026"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Gastroesophageal reflux disease",
+          "start": "2026-08-18"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Gastroesophageal reflux disease",
+          "date": "2026-08-18",
+          "author": "Dr. Lena Brooks",
+          "text": "Gastroesophageal reflux disease visit. Chief Complaint: heartburn and regurgitation. 74-year-old woman with a history of gastroesophageal reflux disease. Reports adherence to medications with no acute distress. Examination: BP 146/84, HR 76, afebrile, cardiopulmonary examination unremarkable. Assessment: gastroesophageal reflux disease without alarm features. Plan: omeprazole 20 mg daily before breakfast, avoid late meals, weight management, reassess in 6 weeks."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.1,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-08-18"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 140,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-08-18"
+        }
+      ]
+    },
+    {
+      "mrn": "00103189",
+      "first_name": "Bianca",
+      "last_name": "Romano",
+      "dob": "1959-04-01",
+      "gender": "M",
+      "phone": "212-555-2027",
+      "email": "bianca.romano@example.org",
+      "address": {
+        "line": "127 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10027"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Knee osteoarthritis",
+          "start": "2026-08-21"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Knee osteoarthritis",
+          "date": "2026-08-21",
+          "author": "Dr. Samuel Ortiz",
+          "text": "Knee osteoarthritis visit. Chief Complaint: right knee pain with activity. 67-year-old man with a history of knee osteoarthritis. Reports adherence to medications with no acute distress. Examination: BP 151/87, HR 77, afebrile, cardiopulmonary examination unremarkable. Assessment: moderate right knee osteoarthritis. Plan: physical therapy, topical diclofenac, weight management, consider intra-articular injection."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "CRP",
+          "value": 6,
+          "unit": "mg/L",
+          "reference_range": "<10",
+          "date": "2026-08-21"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.5,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-08-21"
+        }
+      ]
+    },
+    {
+      "mrn": "00103196",
+      "first_name": "Carlos",
+      "last_name": "Mendez",
+      "dob": "1966-05-02",
+      "gender": "F",
+      "phone": "212-555-2028",
+      "email": "carlos.mendez@example.org",
+      "address": {
+        "line": "128 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10028"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Anxiety follow-up",
+          "start": "2026-08-24"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Anxiety follow-up",
+          "date": "2026-08-24",
+          "author": "Dr. Lena Brooks",
+          "text": "Anxiety follow-up visit. Chief Complaint: anxiety and poor sleep. 60-year-old woman with a history of anxiety follow-up. Reports adherence to medications with no acute distress. Examination: BP 128/76, HR 78, afebrile, cardiopulmonary examination unremarkable. Assessment: generalized anxiety disorder, improving on therapy. Plan: continue sertraline 50 mg daily, cognitive behavioral therapy, sleep hygiene, follow up in 6 weeks."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "TSH",
+          "value": 2.1,
+          "unit": "mIU/L",
+          "reference_range": "0.4-4.0",
+          "date": "2026-08-24"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 12.9,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-08-24"
+        }
+      ]
+    },
+    {
+      "mrn": "00103203",
+      "first_name": "Diana",
+      "last_name": "Petrov",
+      "dob": "1973-06-03",
+      "gender": "M",
+      "phone": "212-555-2029",
+      "email": "diana.petrov@example.org",
+      "address": {
+        "line": "129 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10029"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Asthma follow-up",
+          "start": "2026-08-27"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Asthma follow-up",
+          "date": "2026-08-27",
+          "author": "Dr. Lena Brooks",
+          "text": "Asthma follow-up visit. Chief Complaint: asthma control check. 53-year-old man with a history of asthma follow-up. Reports adherence to medications with no acute distress. Examination: BP 133/79, HR 79, afebrile, cardiopulmonary examination unremarkable. Assessment: well-controlled asthma with normal peak flow. Plan: continue inhaled corticosteroid-formoterol as needed, refill albuterol, asthma action plan reviewed."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "WBC",
+          "value": 6.8,
+          "unit": "10^3/uL",
+          "reference_range": "4.0-11.0",
+          "date": "2026-08-27"
+        },
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.6,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-08-27"
+        }
+      ]
+    },
+    {
+      "mrn": "00103210",
+      "first_name": "Ethan",
+      "last_name": "Park",
+      "dob": "1980-07-04",
+      "gender": "F",
+      "phone": "212-555-2030",
+      "email": "ethan.park@example.org",
+      "address": {
+        "line": "130 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10030"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Hypertension follow-up",
+          "start": "2026-08-30"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Hypertension follow-up",
+          "date": "2026-08-30",
+          "author": "Dr. Samuel Ortiz",
+          "text": "Hypertension follow-up visit. Chief Complaint: blood pressure follow-up. 46-year-old woman with a history of hypertension follow-up. Reports adherence to medications with no acute distress. Examination: BP 138/82, HR 80, afebrile, cardiopulmonary examination unremarkable. Assessment: hypertension above goal. Plan: increase lisinopril to 20 mg daily, home blood pressure log, low-sodium diet, recheck in 4 weeks."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Sodium",
+          "value": 139,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-08-30"
+        },
+        {
+          "test_name": "Potassium",
+          "value": 4.2,
+          "unit": "mmol/L",
+          "reference_range": "3.5-5.1",
+          "date": "2026-08-30"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 1.0,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "mrn": "00103217",
+      "first_name": "Fatima",
+      "last_name": "Diallo",
+      "dob": "1987-08-05",
+      "gender": "M",
+      "phone": "212-555-2031",
+      "email": "fatima.diallo@example.org",
+      "address": {
+        "line": "131 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10031"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Type 2 diabetes follow-up",
+          "start": "2026-09-02"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Type 2 diabetes follow-up",
+          "date": "2026-09-02",
+          "author": "Dr. Lena Brooks",
+          "text": "Type 2 diabetes follow-up visit. Chief Complaint: diabetes follow-up. 39-year-old man with a history of type 2 diabetes follow-up. Reports adherence to medications with no acute distress. Examination: BP 143/85, HR 81, afebrile, cardiopulmonary examination unremarkable. Assessment: type 2 diabetes with HbA1c above goal. Plan: continue metformin, add empagliflozin, diabetes education, repeat HbA1c in 3 months."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "HbA1c",
+          "value": 7.9,
+          "unit": "%",
+          "reference_range": "4.0-5.6",
+          "date": "2026-09-02"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 168,
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "date": "2026-09-02"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 0.9,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-09-02"
+        }
+      ]
+    },
+    {
+      "mrn": "00103224",
+      "first_name": "George",
+      "last_name": "Papadopoulos",
+      "dob": "1994-09-06",
+      "gender": "F",
+      "phone": "212-555-2032",
+      "email": "george.papadopoulos@example.org",
+      "address": {
+        "line": "132 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10032"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Annual physical examination",
+          "start": "2026-09-05"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Annual physical examination",
+          "date": "2026-09-05",
+          "author": "Dr. Lena Brooks",
+          "text": "Annual physical examination visit. Chief Complaint: routine annual physical. 31-year-old woman with a history of annual physical examination. Reports adherence to medications with no acute distress. Examination: BP 148/88, HR 82, afebrile, cardiopulmonary examination unremarkable. Assessment: healthy adult with borderline LDL cholesterol. Plan: diet and exercise counseling, repeat lipids in 6 months, age-appropriate screening."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.8,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-09-05"
+        },
+        {
+          "test_name": "Glucose",
+          "value": 96,
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "date": "2026-09-05"
+        },
+        {
+          "test_name": "LDL Cholesterol",
+          "value": 112,
+          "unit": "mg/dL",
+          "reference_range": "<100",
+          "date": "2026-09-05"
+        }
+      ]
+    },
+    {
+      "mrn": "00103231",
+      "first_name": "Hana",
+      "last_name": "Sato",
+      "dob": "1956-10-07",
+      "gender": "M",
+      "phone": "212-555-2033",
+      "email": "hana.sato@example.org",
+      "address": {
+        "line": "133 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10033"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Upper respiratory infection",
+          "start": "2026-09-08"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Upper respiratory infection",
+          "date": "2026-09-08",
+          "author": "Dr. Samuel Ortiz",
+          "text": "Upper respiratory infection visit. Chief Complaint: sore throat and nasal congestion for four days. 69-year-old man with a history of upper respiratory infection. Reports adherence to medications with no acute distress. Examination: BP 153/77, HR 83, afebrile, cardiopulmonary examination unremarkable. Assessment: viral upper respiratory infection. Plan: supportive care, fluids, rest, return if fever or shortness of breath develops."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "WBC",
+          "value": 7.2,
+          "unit": "10^3/uL",
+          "reference_range": "4.0-11.0",
+          "date": "2026-09-08"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 138,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-09-08"
+        }
+      ]
+    },
+    {
+      "mrn": "00103238",
+      "first_name": "Isaac",
+      "last_name": "Levi",
+      "dob": "1963-11-08",
+      "gender": "F",
+      "phone": "212-555-2034",
+      "email": "isaac.levi@example.org",
+      "address": {
+        "line": "134 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10034"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Mechanical low back pain",
+          "start": "2026-09-11"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Mechanical low back pain",
+          "date": "2026-09-11",
+          "author": "Dr. Lena Brooks",
+          "text": "Mechanical low back pain visit. Chief Complaint: lower back pain after lifting. 62-year-old woman with a history of mechanical low back pain. Reports adherence to medications with no acute distress. Examination: BP 130/80, HR 84, afebrile, cardiopulmonary examination unremarkable. Assessment: mechanical low back pain without red flags. Plan: NSAIDs as needed, physical therapy referral, return precautions for weakness or incontinence."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Hemoglobin",
+          "value": 14.1,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-09-11"
+        },
+        {
+          "test_name": "Creatinine",
+          "value": 0.9,
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.3",
+          "date": "2026-09-11"
+        }
+      ]
+    },
+    {
+      "mrn": "00103245",
+      "first_name": "Jasmine",
+      "last_name": "Khan",
+      "dob": "1970-12-09",
+      "gender": "M",
+      "phone": "212-555-2035",
+      "email": "jasmine.khan@example.org",
+      "address": {
+        "line": "135 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10035"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Hyperlipidemia follow-up",
+          "start": "2026-09-14"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Hyperlipidemia follow-up",
+          "date": "2026-09-14",
+          "author": "Dr. Lena Brooks",
+          "text": "Hyperlipidemia follow-up visit. Chief Complaint: cholesterol follow-up. 55-year-old man with a history of hyperlipidemia follow-up. Reports adherence to medications with no acute distress. Examination: BP 135/83, HR 85, afebrile, cardiopulmonary examination unremarkable. Assessment: hyperlipidemia not at LDL goal. Plan: increase atorvastatin to 40 mg nightly, repeat lipid panel in 8 weeks, continue Mediterranean diet."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "LDL Cholesterol",
+          "value": 156,
+          "unit": "mg/dL",
+          "reference_range": "<100",
+          "date": "2026-09-14"
+        },
+        {
+          "test_name": "HDL Cholesterol",
+          "value": 44,
+          "unit": "mg/dL",
+          "reference_range": ">40",
+          "date": "2026-09-14"
+        },
+        {
+          "test_name": "Triglycerides",
+          "value": 180,
+          "unit": "mg/dL",
+          "reference_range": "<150",
+          "date": "2026-09-14"
+        },
+        {
+          "test_name": "ALT",
+          "value": 32,
+          "unit": "U/L",
+          "reference_range": "7-56",
+          "date": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "mrn": "00103252",
+      "first_name": "Lucas",
+      "last_name": "Ferreira",
+      "dob": "1977-01-10",
+      "gender": "F",
+      "phone": "212-555-2036",
+      "email": "lucas.ferreira@example.org",
+      "address": {
+        "line": "136 Example Ave",
+        "city": "New York",
+        "state": "NY",
+        "postal_code": "10036"
+      },
+      "encounters": [
+        {
+          "class": "AMB",
+          "reason": "Gastroesophageal reflux disease",
+          "start": "2026-09-17"
+        }
+      ],
+      "documents": [
+        {
+          "type": "Progress Note",
+          "title": "Primary Care - Gastroesophageal reflux disease",
+          "date": "2026-09-17",
+          "author": "Dr. Samuel Ortiz",
+          "text": "Gastroesophageal reflux disease visit. Chief Complaint: heartburn and regurgitation. 49-year-old woman with a history of gastroesophageal reflux disease. Reports adherence to medications with no acute distress. Examination: BP 140/86, HR 68, afebrile, cardiopulmonary examination unremarkable. Assessment: gastroesophageal reflux disease without alarm features. Plan: omeprazole 20 mg daily before breakfast, avoid late meals, weight management, reassess in 6 weeks."
+        }
+      ],
+      "labs": [
+        {
+          "test_name": "Hemoglobin",
+          "value": 13.1,
+          "unit": "g/dL",
+          "reference_range": "12.0-17.5",
+          "date": "2026-09-17"
+        },
+        {
+          "test_name": "Sodium",
+          "value": 140,
+          "unit": "mmol/L",
+          "reference_range": "135-145",
+          "date": "2026-09-17"
+        }
+      ]
+    }
+  ]
+}
