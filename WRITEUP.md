@@ -32,7 +32,7 @@ SQLite and in-process FAISS are ideal for a single-node demo but not for concurr
 
 ## Validation
 
-`pytest` passes all 69 tests. The FHIR report shows 51/51 valid bundles, 0 errors and 0 warnings. API smoke tests cover health, search, filters, patients, detail, bundle and resource endpoints. UI checks covered live search, filters, drawer tabs, JSON expansion, focus behavior, empty/error states and responsive layouts. The 50-record latency test passes well inside the two-second budget.
+`pytest` passes all 73 tests. The FHIR report shows 51/51 valid bundles, 0 errors and 0 warnings. API smoke tests cover health, search, filters, patients, detail, bundle and resource endpoints. UI checks covered live search, filters, drawer tabs, JSON expansion, focus behavior, empty/error states and responsive layouts. The 50-record latency test passes well inside the two-second budget.
 
 ## Research and next steps
 

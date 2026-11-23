@@ -122,7 +122,7 @@ src/ehr_media/
 data/raw/         synthetic source exports (JSON, CSV, TXT)
 frontend/         accessible Tailwind UI (index.html, app.js, app.css)
 scripts/          deterministic synthetic data generator
-tests/            69 pytest tests
+tests/            73 pytest tests
 artifacts/        generated DB, reports, summaries, index (gitignored)
 ```
 
@@ -246,7 +246,7 @@ API keys are optional. The demo runs fully offline with deterministic fallbacks.
 .\.venv\Scripts\python.exe -m pytest -q
 ```
 
-**69 tests** cover:
+**73 tests** cover:
 
 - ingestion edge cases (mixed/invalid dates, missing fields, duplicates, conflicts, rejected rows)
 - normalizers (dates, gender, MRN, contact fields)
@@ -256,7 +256,7 @@ API keys are optional. The demo runs fully offline with deterministic fallbacks.
 
 ### Validation performed
 
-- `pytest`: **69 passed**.
+- `pytest`: **73 passed**.
 - FHIR validation report: **51/51 bundles valid**, 0 errors, 0 warnings.
 - API smoke tests: `/health`, `/search`, `/filters`, `/patients`, patient detail, bundle and FHIR resource all return 200.
 - UI smoke tests: welcome state, live search, filter chips, date filters, drawer tabs, JSON expansion, focus management, empty/error states and responsive breakpoints.
