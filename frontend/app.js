@@ -53,11 +53,18 @@ const SUGGESTIONS = [
   "diabetes follow up",
 ];
 
+const DEFAULT_MIN_SCORE = 0.2;
+const DEFAULT_TOP_K = 9;
+const RESULT_LIMITS = [5, 9, 15, 20];
+
 const state = {
   query: "",
   types: new Set(),
+  availableTypes: null,
+  topK: DEFAULT_TOP_K,
   start: "",
   end: "",
+  minScore: DEFAULT_MIN_SCORE,
   results: [],
   loading: false,
   controller: null,
@@ -192,12 +199,22 @@ function renderFilterState() {
   });
 }
 
+function renderMinScore() {
+  const percent = Math.round(state.minScore * 100);
+  els.minScore.value = String(percent);
+  els.minScoreValue.value = `${percent}%`;
+}
+
 function updateUrl() {
   const params = new URLSearchParams();
   if (state.query) params.set("q", state.query);
   if (state.types.size) params.set("types", Array.from(state.types).join(","));
+  if (state.topK !== DEFAULT_TOP_K) params.set("top_k", String(state.topK));
   if (state.start) params.set("start", state.start);
   if (state.end) params.set("end", state.end);
+  if (state.minScore !== DEFAULT_MIN_SCORE) {
+    params.set("min_score", state.minScore.toFixed(2));
+  }
   const query = params.toString();
   const next = query ? `${window.location.pathname}?${query}` : window.location.pathname;
   window.history.replaceState(null, "", next);
@@ -209,12 +226,25 @@ function hydrateFromUrl() {
   const types = (params.get("types") || "")
     .split(",")
     .map((item) => item.trim())
-    .filter((item) => TYPE_META[item]);
+    .filter(
+      (item) =>
+        TYPE_META[item] &&
+        (state.availableTypes === null || state.availableTypes.has(item))
+    );
   types.forEach((type) => state.types.add(type));
+  const topKParam = Number(params.get("top_k"));
+  state.topK = RESULT_LIMITS.includes(topKParam) ? topKParam : DEFAULT_TOP_K;
   state.start = params.get("start") || "";
   state.end = params.get("end") || "";
+  const minScoreParam = params.get("min_score");
+  const parsedMinScore = minScoreParam === null ? DEFAULT_MIN_SCORE : Number(minScoreParam);
+  state.minScore = Number.isFinite(parsedMinScore)
+    ? Math.max(0, Math.min(1, parsedMinScore))
+    : DEFAULT_MIN_SCORE;
   els.startDate.value = state.start;
   els.endDate.value = state.end;
+  els.resultLimit.value = String(state.topK);
+  renderMinScore();
   els.searchInput.value = query;
   renderFilterState();
   updateClearButton();
@@ -254,6 +284,34 @@ async function loadHealth() {
     els.indexStatus.className =
       "inline-flex items-center gap-2 rounded-full border border-amber-200 bg-amber-50 px-3 py-1.5 text-xs font-semibold text-amber-800 shadow-sm";
     els.indexStatus.title = error.message;
+  }
+}
+
+function showFilterLoadError(message) {
+  const current = els.filterLoadStatus.textContent;
+  els.filterLoadStatus.textContent = current ? `${current} ${message}` : message;
+  els.filterLoadStatus.classList.remove("hidden");
+}
+
+async function loadFilterOptions() {
+  try {
+    const response = await fetch("/filters");
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(data.detail || `Request failed (${response.status})`);
+    state.availableTypes = new Set(data.resource_types || []);
+    document.querySelectorAll("#type-filters [data-type]").forEach((button) => {
+      if (button.dataset.type !== "all") {
+        button.hidden = !state.availableTypes.has(button.dataset.type);
+      }
+    });
+    if (data.date_range && data.date_range.min && data.date_range.max) {
+      els.startDate.min = data.date_range.min;
+      els.startDate.max = data.date_range.max;
+      els.endDate.min = data.date_range.min;
+      els.endDate.max = data.date_range.max;
+    }
+  } catch (error) {
+    showFilterLoadError(`Could not load available filter options: ${error.message}`);
   }
 }
 
@@ -315,7 +373,7 @@ async function doSearch(query) {
   updateUrl();
   setLoading(true, query);
 
-  const payload = { query, top_k: 5 };
+  const payload = { query, top_k: state.topK, min_score: state.minScore };
   if (state.types.size) payload.resource_types = Array.from(state.types);
   if (state.start) payload.start_date = state.start;
   if (state.end) payload.end_date = state.end;
@@ -621,11 +679,15 @@ function renderError(message) {
 
 function clearFilters() {
   state.types.clear();
+  state.topK = DEFAULT_TOP_K;
   state.start = "";
   state.end = "";
+  state.minScore = DEFAULT_MIN_SCORE;
+  els.resultLimit.value = String(DEFAULT_TOP_K);
   els.startDate.value = "";
   els.endDate.value = "";
   renderFilterState();
+  renderMinScore();
 }
 
 function applyQuery(query) {
@@ -780,6 +842,40 @@ function renderDetail(data) {
   activateTab(state.activeTab || "summary", false);
 }
 
+async function regenerateSummary(button) {
+  const patientId = state.detail && state.detail.patient && state.detail.patient.id;
+  if (!patientId) return;
+
+  const status = $("summary-refresh-status");
+  button.disabled = true;
+  button.textContent = "Regenerating…";
+  status.textContent = "";
+  status.classList.add("hidden");
+  try {
+    const response = await fetch(
+      `/patients/${encodeURIComponent(patientId)}/summary?force=true`
+    );
+    const summary = await response.json().catch(() => ({}));
+    if (!response.ok) {
+      throw new Error(summary.detail || `Request failed (${response.status})`);
+    }
+    if (!state.detail || state.detail.patient.id !== patientId) return;
+    state.detail.summary = summary;
+    renderDetail(state.detail);
+    const nextButton = $("refresh-summary");
+    if (nextButton) nextButton.focus();
+  } catch (error) {
+    if (!state.detail || state.detail.patient.id !== patientId) return;
+    status.textContent = `Summary refresh failed: ${error.message}`;
+    status.classList.remove("hidden");
+  } finally {
+    if (button.isConnected) {
+      button.disabled = false;
+      button.textContent = "Regenerate summary";
+    }
+  }
+}
+
 function validationBanner(data) {
   const validation = data.validation;
   if (!validation) {
@@ -842,6 +938,22 @@ function buildSummaryPanel(data) {
   panel.setAttribute("aria-labelledby", "tab-summary");
   panel.tabIndex = 0;
   panel.append(validationBanner(data));
+
+  const refreshRow = el("div", "flex justify-end");
+  const refreshButton = el(
+    "button",
+    "rounded-lg border border-slate-200 bg-white px-2 py-1 text-[10px] font-semibold text-slate-600 transition hover:border-teal-300 hover:text-teal-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500",
+    "Regenerate summary"
+  );
+  refreshButton.id = "refresh-summary";
+  refreshButton.type = "button";
+  refreshButton.addEventListener("click", () => regenerateSummary(refreshButton));
+  refreshRow.append(refreshButton);
+  panel.append(refreshRow);
+  const refreshStatus = el("p", "hidden text-xs text-rose-700");
+  refreshStatus.id = "summary-refresh-status";
+  refreshStatus.setAttribute("role", "alert");
+  panel.append(refreshStatus);
 
   const summary = data.summary;
   if (!summary) {
@@ -1061,6 +1173,21 @@ function buildResourcesPanel(data) {
   panel.tabIndex = 0;
   panel.hidden = true;
 
+  const bundleActions = el("div", "flex justify-end");
+  const downloadButton = el(
+    "button",
+    "rounded-lg border border-slate-200 bg-white px-2 py-1 text-[10px] font-semibold text-slate-600 transition hover:border-teal-300 hover:text-teal-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500",
+    "Download FHIR Bundle"
+  );
+  downloadButton.type = "button";
+  const downloadStatus = el("p", "hidden text-xs text-rose-700");
+  downloadStatus.setAttribute("role", "alert");
+  downloadButton.addEventListener("click", () =>
+    downloadFhirBundle(data.patient && data.patient.id, downloadButton, downloadStatus)
+  );
+  bundleActions.append(downloadButton);
+  panel.append(bundleActions, downloadStatus);
+
   const resources = data.resources || [];
   if (!resources.length) {
     panel.append(el("p", "rounded-2xl border border-dashed border-slate-300 bg-white p-6 text-center text-sm text-slate-500", "No linked FHIR resources."));
@@ -1120,6 +1247,38 @@ function buildResourcesPanel(data) {
     panel.append(section);
   });
   return panel;
+}
+
+async function downloadFhirBundle(patientId, button, status) {
+  if (!patientId) return;
+  button.disabled = true;
+  status.textContent = "";
+  status.classList.add("hidden");
+  try {
+    const response = await fetch(
+      `/patients/${encodeURIComponent(patientId)}/bundle`
+    );
+    const bundle = await response.json().catch(() => ({}));
+    if (!response.ok) {
+      throw new Error(bundle.detail || `Request failed (${response.status})`);
+    }
+    const file = new Blob([JSON.stringify(bundle, null, 2)], {
+      type: "application/fhir+json",
+    });
+    const url = window.URL.createObjectURL(file);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `${patientId}-bundle.json`;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    window.setTimeout(() => window.URL.revokeObjectURL(url), 1000);
+  } catch (error) {
+    status.textContent = `Bundle download failed: ${error.message}`;
+    status.classList.remove("hidden");
+  } finally {
+    button.disabled = false;
+  }
 }
 
 function activateTab(tab, focus) {
@@ -1217,6 +1376,17 @@ function bindEvents() {
     if (state.query) scheduleSearch(true);
     else updateUrl();
   });
+  els.resultLimit.addEventListener("change", () => {
+    state.topK = Number(els.resultLimit.value);
+    if (state.query) scheduleSearch(true);
+    else updateUrl();
+  });
+  els.minScore.addEventListener("input", () => {
+    state.minScore = Number(els.minScore.value) / 100;
+    renderMinScore();
+    if (state.query) scheduleSearch(false);
+    else updateUrl();
+  });
   els.resetFilters.addEventListener("click", () => {
     clearFilters();
     if (state.query) scheduleSearch(true);
@@ -1251,19 +1421,25 @@ function bindEvents() {
 
   window.addEventListener("popstate", () => {
     state.types.clear();
+    state.topK = DEFAULT_TOP_K;
     state.start = "";
     state.end = "";
+    state.minScore = DEFAULT_MIN_SCORE;
     hydrateFromUrl();
   });
 }
 
-function init() {
+async function init() {
   Object.assign(els, {
     searchForm: $("search-form"),
     searchInput: $("search-input"),
     clearSearch: $("clear-search"),
+    resultLimit: $("result-limit"),
     startDate: $("start-date"),
     endDate: $("end-date"),
+    minScore: $("min-score"),
+    minScoreValue: $("min-score-value"),
+    filterLoadStatus: $("filter-load-status"),
     resetFilters: $("reset-filters"),
     resultGrid: $("result-grid"),
     resultMeta: $("result-meta"),
@@ -1282,6 +1458,7 @@ function init() {
   renderFilterState();
   bindEvents();
   loadHealth();
+  await loadFilterOptions();
   hydrateFromUrl();
 }
 

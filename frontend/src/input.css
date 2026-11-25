@@ -23,6 +23,16 @@
   :focus-visible {
     outline: none;
   }
+
+  #search-input::-webkit-search-cancel-button {
+    display: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  #search-input::-ms-clear {
+    display: none;
+  }
 }
 
 @layer components {

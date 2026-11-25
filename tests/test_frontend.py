@@ -23,6 +23,9 @@ def test_frontend_markup_is_accessible_and_complete() -> None:
     assert 'data-type="Observation"' in markup
     assert 'id="start-date"' in markup
     assert 'id="end-date"' in markup
+    assert 'id="min-score"' in markup
+    assert 'id="patient-filter"' not in markup
+    assert 'id="result-limit"' in markup
 
     # Accessibility contract.
     assert "skip-link" in markup
@@ -50,6 +53,14 @@ def test_frontend_script_covers_key_interactions() -> None:
     assert "handleTabKeydown" in script
     assert 'event.key === "Escape"' in script
     assert "aria-pressed" in script
+    assert "min_score: state.minScore" in script
+    assert 'params.set("min_score"' in script
+    assert "payload.patient_id = state.patientId" not in script
+    assert "top_k: state.topK" in script
+    assert 'fetch("/filters")' in script
+    assert 'fetch("/patients?limit=200")' not in script
+    assert "/summary?force=true" in script
+    assert "/bundle" in script
 
 
 def test_tailwind_stylesheet_is_built() -> None:
